@@ -243,7 +243,150 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  }
+}
+.title a {
+  font-size: 1rem;
+  color: #fff;
+  padding: 10px 30px;
+  transition: 0.5s;
+  margin-top: 20px;
+  text-align: right;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  display: inline-block;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.title a:hover {
+    color: red;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px #000;
+}
+.work .Works {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.work .Works .space {
+  width: 200px;
+  margin: 20px;
+  border: 1px solid #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.work .Works .space .img-box {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.work .Works .space .img-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: none;
+}
+.work .Works .space .img-box img:hover {
+  transform: none;
+}
+.work .Works .space .text {
+  text-align: center;
+  padding: 15px 0 5px;
+ }
+.work .Works .space .text a{
+    color:#000;
+    text-decoration: none;
+}
+.work .Works .space .text a:hover{
+    color:red;
+    text-decoration:underline;
+}
+
+.Contact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background: rgb(50, 50, 50);
+}
+.Contact .links,
+.Contact .contact-info,
+.Contact .feedback {
+    width: 30%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.Contact .links h4,
+.Contact .contact-info h4,
+.Contact .feedback h4 {
+    color: #fff;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.Contact .links ul,
+.Contact .contact-info ul{
+    padding:10px 20px;
+}
+.Contact .links ul li,
+.Contact .contact-info ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 40px;
+}
+.Contact .links ul li:hover a,
+.Contact .links ul li:hover ion-icon,
+.Contact .contact-info ul li:hover a,
+.Contact .contact-info ul li:hover ion-icon{
+    color: red;
+}
+.Contact .links ul li ion-icon ,
+.Contact .links ul li a,
+.Contact .contact-info ul li ion-icon ,
+.Contact .contact-info ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 40px;
+    font-weight: 100;
+    margin-left: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Contact .feedback form {
+    padding:20px;
+}
+.Contact .feedback form input {
+    padding: 10px 50px;
+    font-size: 1rem;
+}
+.Contact .feedback form textarea {
+    padding: 10px;
+    font-size: 1rem;
+}
+.Contact .feedback form input[type="button"] {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+.Contact .feedback form input[type="button"]:hover {
+    background-color: #fff;
+    color: red;
+}
 #weava-ui-wrapper {
     display: none;
 }
@@ -259,7 +402,7 @@ section {
         position: fixed;
         left: 0;
         top: -100%;
-        width: 50%;
+        width: 100%;
         padding: 20px;
         min-height: 100vh;
         display:flex;
@@ -268,6 +411,12 @@ section {
         flex-direction: column;
         filter: invert(0);
         background-color: rgb(0,0,0);
+    }
+    header.active nav.active {
+        background: white;
+    }
+    header.active nav.active a {
+        color: #000;
     }
     header nav.active {
         top: 0%;
@@ -280,7 +429,7 @@ section {
         display: flex;
     }
     section {
-        padding: 50px;
+        padding: 100px 50px;
     }
     .introduction {
         padding: 0%;
@@ -288,5 +437,51 @@ section {
     }
     .introduction .description {
         width: 100%;
+    }
+    .works .title p{
+        text-align: center;
+    }
+    .Contact {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Contact .links,
+    .Contact .contact-info,
+    .Contact .feedback {
+        padding: 0px;
+    }
+    .Contact .links h4,
+    .Contact .contact-info h4,
+    .Contact .feedback h4 {
+        padding: 5px;
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }   
+    .Contact .links ul,
+    .Contact .contact-info ul {
+        padding: 10px 0px;
+    }
+    .Contact .links ul li,
+    .Contact .contact-info ul li {
+        line-height: 30px;
+    }
+    .Contact .links ul li ion-icon ,
+    .Contact .links ul li a,
+    .Contact .contact-info ul li ion-icon ,
+    .Contact .contact-info ul li a {
+        color: #fff;
+        font-size: 0.8rem;
+        line-height: 30px;
+    }
+    .Contact .feedback form {
+        padding:10px;
+    }
+    .Contact .feedback form input {
+        padding: 10px 30px;
+        font-size: 0.8rem;
+    }
+    .Contact .feedback form textarea {
+        padding: 5px;
+        font-size: 0.8rem;
     }
 }

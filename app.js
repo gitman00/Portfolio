@@ -1,5 +1,5 @@
  
-// Declaring variables
+
 
 window.addEventListener("scroll", function () {
 
