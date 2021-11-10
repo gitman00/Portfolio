@@ -73,25 +73,15 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-header .logo a .A {
-    color: #fff;
-}
-header .logo a:hover .A::after {
-    content: "tomic";
-}
-header .logo a:hover .D::after {
-    content: "ev";
-}
 header .logo a {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 900;
-    transition: 0.5s; 
+    width: 1000%;
     text-decoration: none;
 }
-header .logo a span {
-    color: #000;
-    transition: 0.5s;
+header .logo a img {
+    width: 50%;
+}
+header .logo a img:hover {
+    filter: contrast(175%) saturate(175%);
 }
 header nav {
     display: flex;
@@ -308,6 +298,7 @@ section {
 
 .Contact {
     width: 100%;
+   padding: 0px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -349,7 +340,7 @@ section {
 .Contact .links ul li:hover ion-icon,
 .Contact .contact-info ul li:hover a,
 .Contact .contact-info ul li:hover ion-icon{
-    color: red;
+    color: rgba(255, 255, 255, 0.6);
 }
 .Contact .links ul li ion-icon ,
 .Contact .links ul li a,
@@ -414,6 +405,9 @@ section {
     header.active nav.active {
         background: white;
     }
+    header .logo a img {
+        width: 40%;
+    }
     header.active nav.active a {
         color: #000;
     }
@@ -462,7 +456,7 @@ section {
     }
     .Contact .links ul li,
     .Contact .contact-info ul li {
-        line-height: 30px;
+        line-height: 20px;
     }
     .Contact .links ul li ion-icon ,
     .Contact .links ul li a,
@@ -470,7 +464,7 @@ section {
     .Contact .contact-info ul li a {
         color: #fff;
         font-size: 0.8rem;
-        line-height: 30px;
+        line-height: 20px;
     }
     .Contact .feedback form {
         padding:10px;
