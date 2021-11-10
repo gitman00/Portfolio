@@ -421,6 +421,12 @@ section {
     header .menu-icons {
         display: flex;
     }
+    header .menu-icons .one,
+    header .menu-icons .two,
+    header .menu-icons .three{
+        width: 40px;
+        height:2.5px;
+}
     section {
         padding: 100px 20px;
     }
