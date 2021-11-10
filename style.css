@@ -28,9 +28,6 @@
     align-items: center;
     justify-content: space-between;
 }
-.wrapper.active .text h1 {
-    transform: translateX(-800px);
-}
 .wrapper .text h1 {
     color:transparent;
     font-size: 3rem;
@@ -61,7 +58,9 @@
         line-height: 10rem;
     }
 }
-
+.wrapper.active .text h1 {
+    transform: translateX(-800px);
+}
 header {
     position: fixed;
     left: 0;
@@ -400,8 +399,8 @@ section {
     header.active nav,
     header nav {
         position: fixed;
-        left: 0;
-        top: -100%;
+        left: -100%;
+        top: 0;
         width: 100%;
         padding: 20px;
         min-height: 100vh;
@@ -419,7 +418,7 @@ section {
         color: #000;
     }
     header nav.active {
-        top: 0%;
+        left: 0%;
     }
     header nav.active a {
         padding: 0px;
