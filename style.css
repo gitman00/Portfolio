@@ -405,8 +405,9 @@ section {
     header.active nav.active {
         background: white;
     }
-    header .logo a img {
-        width: 40%;
+    header .logo a img,
+    header.active .logo a img {
+        width: 20%;
     }
     header.active nav.active a {
         color: #000;
@@ -456,7 +457,7 @@ section {
     }
     .Contact .links ul li,
     .Contact .contact-info ul li {
-        line-height: 20px;
+        line-height: 30px;
     }
     .Contact .links ul li ion-icon ,
     .Contact .links ul li a,
@@ -464,7 +465,7 @@ section {
     .Contact .contact-info ul li a {
         color: #fff;
         font-size: 0.8rem;
-        line-height: 20px;
+        line-height: 30px;
     }
     .Contact .feedback form {
         padding:10px;
