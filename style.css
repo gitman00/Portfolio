@@ -312,7 +312,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background: rgb(50, 50, 50);
 }
 .Contact .links,
@@ -428,7 +428,7 @@ section {
         display: flex;
     }
     section {
-        padding: 100px 50px;
+        padding: 100px 20px;
     }
     .introduction {
         padding: 0%;
