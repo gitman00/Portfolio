@@ -395,7 +395,6 @@ section {
 }
 .Contact {
     width: 100%;
-   padding: 0px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -574,11 +573,5 @@ section {
     .Contact .feedback form textarea {
         padding: 5px;
         font-size: 0.8rem;
-    }
-    .skills .skills-content {
-        flex-direction: column-reverse;
-    }
-    .skills .skills-content .column{
-        width: 90%;
     }
 }
