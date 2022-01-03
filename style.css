@@ -295,7 +295,104 @@ section {
     color:red;
     text-decoration:underline;
 }
+.skills {
+    background-color: #111;
+}
+.skills .skills-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.skills .title {
+    color: white;
+    margin-bottom: 50px;
+    display: flex;
+    text-align: center;
+}
+.skills .title span {
+    color:red;
+    font-size: 4rem;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+    font-family: lobster;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.skills .skills-content .left a:hover{
+    color: red;
+    background: White;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
 
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 15px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+    border-style: inset;
+    border-radius: 10px;
+    /* box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+    0px 1px rgba(255,255,255,0.8); */
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: red;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 80%;
+}
+.skills-content .right .js::before{
+    width: 40%;
+}
+.skills-content .right .php::before{
+    width: 20%;
+}
+.skills-content .right .mysql::before{
+    width: 10%;
+}
 .Contact {
     width: 100%;
    padding: 0px;
@@ -477,5 +574,11 @@ section {
     .Contact .feedback form textarea {
         padding: 5px;
         font-size: 0.8rem;
+    }
+    .skills .skills-content {
+        flex-direction: column-reverse;
+    }
+    .skills .skills-content .column{
+        width: 90%;
     }
 }
