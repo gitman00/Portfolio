@@ -574,4 +574,10 @@ section {
         padding: 5px;
         font-size: 0.8rem;
     }
+    .skills .skills-content {
+        flex-direction:column;
+    }
+    .skills .skills-content .column{
+        width:90%;
+    }
 }
