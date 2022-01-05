@@ -30,6 +30,7 @@
 }
 .wrapper .text h1 {
     color:transparent;
+    width: 100%;
     font-size: 3rem;
     font-family: 'Lobster', cursive;
     animation: animate 5s ease-in-out 1 ;
@@ -37,6 +38,7 @@
     text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.6);
 }
 .wrapper .text h1 p {
+    width: 100%;
     font-size: 1rem ;
     color: #fff;
     text-shadow: none;
@@ -102,8 +104,8 @@ header nav a:hover {
 }
 header.active {
     padding: 10px 100px;
-    background: #fff;
-    box-shadow: 2px 2px 14px rgba(0,0,0,0.6);
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 header.active nav {
     filter: invert(1);
@@ -296,7 +298,7 @@ section {
     text-decoration:underline;
 }
 .skills {
-    background-color: #111;
+    background-color:  #fff;
 }
 .skills .skills-content {
     width: 100%;
@@ -305,7 +307,7 @@ section {
     justify-content: space-evenly;
 }
 .skills .title {
-    color: white;
+    color: black;
     margin-bottom: 50px;
     display: flex;
     text-align: center;
@@ -326,7 +328,7 @@ section {
     text-align: justify;
     font-family: lobster;
     letter-spacing: 2px;
-    color: #fff;
+    color: black;
 }
 .skills .skills-content .left a{
     display: inline-block;
@@ -339,11 +341,12 @@ section {
     border-radius: 6px;
     font-family: sans-serif;
     transition: all 0.3s ease;
+   border: 2px solid #000;
     text-decoration: none;
 }
 .skills .skills-content .left a:hover{
     color: red;
-    background: White;
+    background: transparent;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -357,7 +360,7 @@ section {
 }
 .skills .skills-content .right span{
     font-weight: 500;
-    color: white;
+    color: red;
     font-size: 18px;
 }
 .skills .skills-content .right .line{
@@ -376,7 +379,9 @@ section {
     height: 100%;
     left: 0;
     top: 0;
-    background: red;
+    box-shadow: 2px 2px 2px black;
+    background: lime;
+    border-radius: 20px;
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -579,5 +584,6 @@ section {
     }
     .skills .skills-content .column{
         width:90%;
+        margin: 20px;
     }
 }
