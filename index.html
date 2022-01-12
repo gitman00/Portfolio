@@ -5,238 +5,525 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AtomicDev</title>
+  <!-- ===== CSS Files ===== -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skins/color-1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- ====== Style Switcher ====== -->
+  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+  <link rel="stylesheet" href="css/style-switcher.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Importing Icons -->
+  <!-- Importingbthe icons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <!-- Linking the css file -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Adding the icon of the website -->
-  <link rel="shortcut icon" href="Assets/Images/logo_aD.png" type="image/png">
-
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="#"> 
-        <img src="Assets/Images/logo_aD.png" alt="">
-      </a>
-    </div>
-    <nav>
-      <a href="#home" onclick="show();">Home</a>
-      <a href="#about" onclick="show();">About Me</a> 
-      <a href="#work" onclick="show();">Work</a>
-      <a href="#Contact" onclick="show();">Contact Me</a>
-    </nav>
-    <div class="menu-icons" onclick="show();">
-      <div class="one"></div>
-      <div class="two"></div>
-      <div class="three"></div>
-    </div>
-  </header>
-
-
-  <section class="wrapper" id="home">
-    <div class="text">
-      <h1>Hello, I am <br> AtomicDev. <br> <p>I am a <span>Web Developer</span></p></h1>
-    </div>
-  </section>
-
-
-  <section class="about" id="about">
-    <div class="introduction">
-      <div class="description">
-        <h2 class="Title">About<span> ME</span></h2>
-        <p>
-            Hey, this is my homepage, so I have to say something about myself. Sometimes it is hard to introduce yourself because you know yourself so well that you do not know where to start with. Let me give a try to see what kind of image you have about me through my self-description. I hope that my impression about myself and your impression about me are not so different. Here it goes. I am AtomicDev . I was born on Nepal and Currently living in the Butwal City.I am a person who loves to code and learn new things. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen musics.
-
-            <br>
-            <br>
-
-            I always wanted to be a great writer and a good programmer.  I am nowhere close those people who benn a great inspiration to me to join IT. I am just someone who does some learning new things, some research, and some writing. But my dream is still alive.
-
-            <br>
-            <br> 
-
-            This is a brief introduction of myself. If you are interested in knowing more, read my blogs or take a look at my pictures. Do not expect too much, and keep your sense of humor.
-        </p>
-        <a href="https://www.facebook.com/manish.ghimire.961993/">SEE MORE</a>
+  <!-- ===== Main Container Start ===== -->
+  <div class="main-container">
+    <!-- ===== Aside Start ===== -->
+    <div class="aside">
+      <div class="logo">
+        <a href="#"><span>A</span>tomicDev</a>  
       </div>
-      <div class="description">
-        <div class="img-box">
-          <img src="Assets/Images/2.jpg" alt="">
-        </div>
+      <div class="nav-toggler">
+        <span></span>
       </div>
-    </div>
-  </section>
-
-  <section class="work" id="work">
-    <div class="title">
-      <h2 class="Title"><span>My</span> Works</h2>
-      <p>Always Learning New Things</p>
-    </div>
-    <div class="Works">
-      <div class="space">
-        <div class="img-box">
-          <img src="Assets/Images/A Tribute Page.png" alt="" />
-        </div>
-        <div class="text">
-          <a href="">Tribute Page</a>
-        </div>
-      </div>
-      <div class="space">
-        <div class="img-box">
-          <img src="Assets/Images/Nabin Audhyogik .png" alt="" />
-        </div>
-        <div class="text">
-          <a href="">NAKBRSS.ORG</a>
-        </div>
-      </div>
-      <div class="space">
-        <div class="img-box">
-          <img src="Assets/Images/Loader.png" alt="" />
-        </div>
-        <div class="text">
-          <a href="">Pre Loader-Js</a>
-        </div>
-      </div>
-      <div class="space">
-        <div class="img-box">
-          <img src="Assets/Images/Animated NavBar.png" alt="" />
-        </div>
-        <div class="text">
-          <a href="">Animated Navbar</a>
-        </div>
-      </div>
-    </div>
-    <div class="title">
-      <a href="https://github.com/gitman00" class="btn">View All</a>
-    </div>
-  </section>
-
-  <section class="skills" id="skills">
-    <div class="max-width">
-        <h2 class="title"> <span>My</span> creative skills & experiences.</h2>
-        <div class="skills-content">
-            <div class="column left">
-                <div class="text"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
-                <a href="#">Read more</a>
-            </div>
-            <div class="column right">
-                <div class="bars">
-                    <div class="info">
-                        <span>HTML</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="line html"></div>
-                </div>
-                <div class="bars">
-                    <div class="info">
-                        <span>CSS</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="line css"></div>
-                </div>
-                <div class="bars">
-                    <div class="info">
-                        <span>JavaScript</span>
-                        <span>40%</span>
-                    </div>
-                    <div class="line js"></div>
-                </div>
-                <div class="bars">
-                    <div class="info">
-                        <span>PHP</span>
-                        <span>20%</span>
-                    </div>
-                    <div class="line php"></div>
-                </div>
-                <div class="bars">
-                    <div class="info">
-                        <span>MySQL</span>
-                        <span>10%</span>
-                    </div>
-                    <div class="line mysql"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <section class="wrapper Contact" id="Contact">
-    <div class="feedback">
-      <h4>Feedback</h4>
-      <form action="">
-
-        <input type="text" name="Name" placeholder="Enter your Name">
-
-        <br>
-        <br>
-        
-        <input type="email" name="E-mail" placeholder="Enter your E-mail">
-
-        <br>
-        <br>
-
-        <textarea name="Message" cols="30" rows="10" placeholder="Enter your Message"></textarea>
-
-        <br>
-        <br>
-
-        <input type="button" value="Submit">
-
-      </form>
-    </div>
-    <div class="links">
-      <h4>Links</h4>
-      <ul>
-        <li>
-          <ion-icon name="logo-facebook"></ion-icon>
-          <a href="https://www.facebook.com/manish.ghimire.961993/" target="_blank">Facebook</a>
-        </li>
-        <li>
-          <ion-icon name="logo-google"></ion-icon>
-          <a href="https://www.google.com" target="_blank">Google</a>
-        </li>
-        <li>
-          <ion-icon name="logo-github"></ion-icon>
-          <a href="https://github.com/gitman00" target="_blank">Github</a>
-        </li>
-        <li>
-          <ion-icon name="logo-discord"></ion-icon>
-          <a href="http://" target="_blank">Discord</a>
-        </li>
+      <ul class="nav">
+        <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+        <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+        <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
       </ul>
     </div>
-    <div class="contact-info">
-      <h4>Contact</h4>
-      <ul>
-        <li>
-          <ion-icon name="call-outline"></ion-icon>
-          <a href="#">+97 1234567890</a>
-        </li>
-        <li>
-          <ion-icon name="mail-outline"></ion-icon>
-          <a href="mailto:ghimiremanish007@gmail.com">ghimiremanish007@gmail.com</a>
-        </li>
-        <li>
-          <ion-icon name="location-outline"></ion-icon>
-          <a href="https://en.wikipedia.org/wiki/Butwal">Butwal, Nepal</a>
-        </li>
-        <li>
-          <ion-icon name="globe-outline"></ion-icon>
-          <a href="https://gitman00.github.io/Portfolio/">Official Website</a>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <!-- ===== Aside End ===== -->
+    <!-- ===== Main Content Start ===== -->
+    <div class="main-content">
+      <!-- ===== Home Section Start ===== -->
+      <section class="home section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">Hello, my name is <span class="name">Atomic Dev</span></h3>
+              <h3 class="my-profession">I' m a <span class="typing">web designer</span></h3>
+              <p>I'm a web Designer with extensive experience for over 10 month.My expertise is to create and website design,graphic design, and many more...</p>
+              <a href="#contact" class="btn hire-me">Hire Me</a>
+            </div>
+            <div class="home-img padd-15">
+              <img src="images/hero.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Home Section End ===== -->
+      <!-- ===== About Section Start ===== -->
+      <section class="about section" id="about" style="background: var(--bg-black-100);">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>I'm Atomic Dev and <span>Web Developer</span></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quo ea commodi autem eius id error. Corporis inventore adipisci hic sequi! Blanditiis architecto reprehenderit rerum assumenda, illum aliquam quae dolore nobis laudantium incidunt maiores harum officiis animi commodi! Ipsam exercitationem molestias, non et velit facilis cupiditate, ducimus, dolor harum explicabo cum necessitatibus obcaecati minima dignissimos.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Birthday : <span>5 Dec 2003</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Age : <span>18</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Website : <span>www.github.atomicdev.io.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Email : <span>atomicdev09@gmail.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Degree : <span>Computer Science</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Phone : <span>9867160050</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>City : <span>Butwal City</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Freelnace : <span>Available</span></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="#" class="btn">Download CV</a>
+                      <a href="#contact" class="btn hire-me">Hire Me</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <h5>JS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 35%;"></div>
+                        <div class="skill-percent">35%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>PHP</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 30%;"></div>
+                        <div class="skill-percent">30%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>HTML</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 96%;"></div>
+                        <div class="skill-percent">96%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Bootstrap</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 10%;"></div>
+                        <div class="skill-percent">10%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="education padd-15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- ===== timeline item ===== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2005 - 2010
+                          </h3>
+                          <h4 class="timeline-title">Nursury to 5 class pass</h4>
+                          <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, maiores. Facere, minus? Quam minus autem quidem similique dignissimos cumque dolorum quis optio blanditiis, doloremque veritatis.</p>
+                        </div>
+                             <!-- ===== timeline item ===== -->
+                             <div class="timeline-item">
+                              <div class="circle-dot"></div>
+                              <h3 class="timeline-date">
+                                <i class="fa fa-calendar"></i> 2011 - 2015
+                              </h3>
+                              <h4 class="timeline-title">Five class to Nine class pass</h4>
+                              <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, maiores. Facere, minus? Quam minus autem quidem similique dignissimos cumque dolorum quis optio blanditiis, doloremque veritatis.</p>
+                            </div>
+                                 <!-- ===== timeline item ===== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2016 - 2020
+                          </h3>
+                          <h4 class="timeline-title">Class 8 to 11</h4>
+                          <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, maiores. Facere, minus? Quam minus autem quidem similique dignissimos cumque dolorum quis optio blanditiis, doloremque veritatis.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience padd-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- ===== timeline item ===== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2022 
+                          </h3>
+                          <h4 class="timeline-title">Master in Computer Science</h4>
+                          <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, maiores. Facere, minus? Quam minus autem quidem similique dignissimos cumque dolorum quis optio blanditiis, doloremque veritatis.</p>
+                        </div>
+                             <!-- ===== timeline item ===== -->
+                             <div class="timeline-item">
+                              <div class="circle-dot"></div>
+                              <h3 class="timeline-date">
+                                <i class="fa fa-calendar"></i> 2022
+                              </h3>
+                              <h4 class="timeline-title">Master in Computer Science</h4>
+                              <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, maiores. Facere, minus? Quam minus autem quidem similique dignissimos cumque dolorum quis optio blanditiis, doloremque veritatis.</p>
+                            </div>
+                                 <!-- ===== timeline item ===== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2012
+                          </h3>
+                          <h4 class="timeline-title">Master in Computer Science</h4>
+                          <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, maiores. Facere, minus? Quam minus autem quidem similique dignissimos cumque dolorum quis optio blanditiis, doloremque veritatis.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== About Section End ===== -->
+      <!-- ===== Services Section Start ===== -->
+      <section class="service section" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Services</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- ===== Service item Start ====== -->
+            <div class="container">
+              <div class="space">
+                <div class="icon">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                  <h1>Web Design</h1>
+                </div>
+                <div class="text">
+                  <div class="name">
+                    <a href="#intro">
+                      <h4>Web Design</h4>
+                    </a>
+                    <!-- <h4>On Time Delivery</h4> -->
+                  </div>
+                  <div class="des">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptas commodi tempora  dicta quaerat maiores sed deserunt. Dolores, nulla ab.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="space">
+                <div class="icon">
+                  <ion-icon name="laptop-outline"></ion-icon>  
+                  <h1>Web Design</h1>
+                </div>
+                <div class="text">
+                  <div class="name">
+                    <a href="#intro">
+                      <h4>Web Design</h4>
+                    </a>
+                    <!-- <h4>Repair Service</h4> -->
+                  </div>
+                  <div class="des">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptas commodi tempora dicta quaerat maiores sed deserunt. Dolores, nulla ab.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="space">
+                <div class="icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                  <h1>Web Design</h1>
+                </div>
+                <div class="text">
+                  <div class="name">
+                    <a href="#intro">
+                      <h4>Web Design</h4>
+                    </a>
+                    <!-- <h4>Damaged Devices</h4> -->
+                  </div>
+                  <div class="des">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptas commodi tempora  dicta quaerat maiores sed deserunt. Dolores, nulla ab.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="space">
+                <div class="icon">
+                  <ion-icon name="code-slash-outline"></ion-icon> 
+                  <h1>Web Design</h1>
+                </div>
+                <div class="text">
+                  <div class="name">
+                    <a href="#intro">
+                      <h4>Web Design</h4>
+                    </a>
+                    <!-- <h4>Gaming Devices</h4> -->
+                  </div>
+                  <div class="des">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptas commodi tempora    dicta quaerat maiores sed deserunt. Dolores, nulla ab.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="space">
+                <div class="icon">
+                  <ion-icon name="search-outline"></ion-icon>
+                  <h1>Web Design</h1>
+                </div>
+                <div class="text">
+                  <div class="name">
+                    <a href="#intro">
+                      <h4>Web Design</h4>
+                    </a>
+                    <!-- <h4>Minimun costs</h4> -->
+                  </div>
+                  <div class="des">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptas commodi tempora    dicta quaerat maiores sed deserunt. Dolores, nulla ab.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="space">
+                <div class="icon">
+                  <ion-icon name="megaphone-outline"></ion-icon>
+                  <h1>Web Design</h1>
+                </div>
+                <div class="text">
+                  <div class="name">
+                    <a href="#intro">
+                      <h4>Web Design</h4>
+                    </a>
+                    <!-- <h4>Exchange Service</h4> -->
+                  </div>
+                  <div class="des">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptas commodi tempora    dicta quaerat maiores sed deserunt. Dolores, nulla ab.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Services Section End ===== -->
+      <!-- ===== Portfolio Section Start ===== -->
+      <section class="portfolio section" id="portfolio"  style="background: var(--bg-black-100);">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-heading padd-15">
+              <h2>My Last Projects :</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- ====== portfolio item start ====== -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  
+                  <img src="images/BABURAM.jpg" alt="trial docks/index.html">
 
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/BABURAM.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/BABURAM.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/BABURAM.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/BABURAM.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/BABURAM.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+          </div>
+        </div>
+      </section>
+      <!-- ===== Portfolio Section End ===== -->
+      <!-- ===== Contact Section Start ===== -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+          <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+          <div class="row">
+            <!-- ===== Contact info item start ====== -->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Call Us On</h4>
+              <p>+986704040404</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+             <!-- ===== Contact info item start ====== -->
+             <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+              <h4>Office</h4>
+              <p>Nepal</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+             <!-- ===== Contact info item start ====== -->
+             <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>ghimiremanish007@gmai.com</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+             <!-- ===== Contact info item start ====== -->
+             <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-globe-europe"></i></div>
+              <h4>Website</h4>
+              <p>www.github.atomicdev.io.com</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+          </div>
+          <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+          <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
+          <!-- ====== Contact Form ====== -->
+          <div class="row">
+            <div class="contact-form padd-15">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Subject">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea name="" class="form-control" id=""  placeholder="Message"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <button type="submit" class="btn">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Contact Section End ===== -->
+
+    </div>
+    <!-- ===== Main Content End ===== -->
+  </div>
+  <!-- ===== Main Container End ===== -->
+  <!-- ===== Style Switcher Start ===== -->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas "></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- ===== Style Switcher End ===== -->
+  <!-- ===== JS Files ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+  <script src="js/style-switcher.js"></script>
 </body>
-
-<!-- Linking the Js file -->
-<script src="app.js"></script>
-
 </html>
