@@ -145,9 +145,10 @@ ul
     height: 100%;
     border-right: 1px solid var(--bg-black-50);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 10;
+    transition: 0.5s;
 }
 .aside .logo
 {
@@ -162,6 +163,7 @@ ul
     font-weight: 700;
     padding: 15px 20px;
     font-size: 30px;
+    margin-bottom: 100px;
     letter-spacing: 5px;
     position: relative;
 }
@@ -201,8 +203,8 @@ ul
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
-    left: 300px;
-    top: 20px;
+    top:5%;
+    left:5%;
     border-radius: 5px;
     background: var(--bg-black-100);
     display: none;
@@ -249,7 +251,7 @@ ul
 
 .aside .nav
 {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .aside .nav li
 {
@@ -862,9 +864,12 @@ h3.my-profession
 }
 @media (max-width:1199px)
 {
-    .aside
-    {
-        left: -270px;
+    .aside {
+        left: -100%;
+    }
+    .aside.active {
+        left: 0%;
+        width: 60%;
     }
     .main-content
     {
@@ -911,5 +916,8 @@ h3.my-profession
     {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .aside .nav-toggler {
+        display:flex;
     }
 }

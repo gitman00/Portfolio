@@ -6,11 +6,6 @@ var typed = new Typed(".typing",{
     loop:true
 })
 
-
-
-
-
-
-
-
-
+// =========================== nav-toggler =====================================
+var menu = document.querySelector('.aside');
+var toggleMenu = () => menu.classList.toggle('active');
