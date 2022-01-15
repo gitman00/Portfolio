@@ -28,7 +28,7 @@ body
     outline: none;
     text-decoration: none;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 ::before,::after
 {
@@ -160,11 +160,7 @@ ul
 .aside .logo .img-box
 {
     color: var(--text-black-900);
-    font-weight: 700;
-    padding: 15px 20px;
     font-size: 30px;
-    margin-bottom: 100px;
-    letter-spacing: 5px;
     position: relative;
 }
 .aside .logo .img-box::before
@@ -251,6 +247,8 @@ ul
 
 .aside .nav
 {
+    position: relative;
+    top: calc(15% - 40px );
     margin-top: 100px;
 }
 .aside .nav li
@@ -594,8 +592,8 @@ h3.my-profession
   }
   .service .row .container .space .icon {
    position: absolute;
-   width: 98%;
-   height:98%;
+   width: 100%;
+   height:100%;
    padding:20px;
    display: flex;
    z-index: 2;
@@ -864,13 +862,6 @@ h3.my-profession
 }
 @media (max-width:1199px)
 {
-    .aside {
-        left: -100%;
-    }
-    .aside.active {
-        left: 0%;
-        width: 60%;
-    }
     .main-content
     {
         padding-left: 0;
@@ -920,4 +911,11 @@ h3.my-profession
     .aside .nav-toggler {
         display:flex;
     }
+    .aside {
+        left: -100%;
+    }
+    .aside.active {
+        left: 0%;
+        width: 60%;
+    } 
 }
