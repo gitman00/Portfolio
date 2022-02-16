@@ -1,7 +1,10 @@
 const searchIcon = document.querySelector('.searchIcon')
+
 const menu = document.querySelector('.menu');
+
 const option = document.querySelector('.options');
 const list = document.querySelector('.list');
+
 const navbar = document.querySelector('nav');
 const header = document.querySelector('header');
 const uparrow = document.querySelector('.UpArrow');
@@ -25,8 +28,8 @@ option.addEventListener('click',display);
 
 // ##########£££££££#£##################
 window.addEventListener('scroll', () => {
-//	uparrow.classList.toggle('active', window.scrollY > 1000)
-	header.classList.toggle('show', window.scrollY > 0)
+	uparrow.classList.toggle('active', window.scrollY > 1000);
+	header.classList.toggle('show', window.scrollY > 0);
 });
 
 // Skills section

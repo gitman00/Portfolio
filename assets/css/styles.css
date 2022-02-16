@@ -71,6 +71,7 @@ ion-icon {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 30px 0px;
 }
 .title h1 {
   color: var(--day);
@@ -93,7 +94,7 @@ header {
   width: 100%;
   z-index: 10;
   display: flex;
-  padding: 40px 100px;
+  padding: 40px 50px;
   align-items: center;
   transition: 0.5s;
   background: var(--clr);
@@ -159,12 +160,12 @@ section {
   align-items: center;
   justify-content: center;
 }
-/*.home {
+.home {
   background: url('../Image/front.png');
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
-}*/
+}
 .home #text {
   gap: 10px;
   width: 100%;
@@ -220,10 +221,10 @@ section {
 }
 .home .UpArrow {
   position: fixed;
-  right: -100px;
+  right: -100%;
   padding: 5px;
   bottom: 50px;
-  z-index: 1;
+  z-index: 1000000000000;
   text-decoration: none;
   border-radius: 10px;
   border: 2px solid var(--clr);
@@ -233,7 +234,7 @@ section {
   color: var(--night);
 }
 .home .UpArrow.active {
-  right: 20px;
+  right: 2%;
 }
 .about {
   flex-direction: column;
@@ -367,13 +368,13 @@ section {
   padding: 20px;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 70px;
 }
 .services .space .service {
   flex-direction: column;
   gap: 20px;
-  width: 300px;
-  height: 300px;
+  width: 30%;
+  height: 30%;
   display: flex;
   padding: 40px 0px;
   align-items: center;
@@ -535,6 +536,10 @@ footer .shapes {
   .menubar .menu.active ion-icon[name="menu-outline"] {
     display: none;
   }
+  .home .UpArrow,
+  .home .DownArrow {
+    display: none;
+  }
   .about .space {
     flex-direction: column;
   }
@@ -548,6 +553,9 @@ footer .shapes {
   }
   .services .space {
     flex-direction: column;
+  }
+   .services .space .service {
+    width: 70%;
   }
   .contact .container {
     flex-direction: column;
