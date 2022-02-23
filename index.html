@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--==================== UNICONS ====================-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <!--==================== SWIPER CSS ====================-->
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="shortcut icon" href="assets/Image/logo.png" type="image/x-icon" />
+  <title>AtomicDev</title>
+
+</head>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <div class="logo">
+      <h1>AtomicDev</h1>
+    </div>
+    <!-- navigators -->
+    <nav>
+      <a class="hom" onclick="func();" href="#home">Home</a>
+      <a class="ab" onclick="func();" href="#about">About</a>
+      <a class="skil" onclick="func();" href="#skills">Skills</a>
+      <a class="service" onclick="func();" href="#services">Services</a>
+      <a class="port" onclick="func();" href="#portfolio">Portfolio</a>
+      <a class="contac" onclick="func();" href="#contact">Contact</a>
+    </nav>
+    <div class="SearchIcon">
+      <ion-icon name="search"></ion-icon>
+    </div>
+  </header>
+  <!--==================== MAIN ====================-->
+  <main class="imp">
+    <!--==================== HOME ====================-->
+    <section class="home" id="home">
+      <div id="text">
+        <h1>
+          Hi,
+          <br> I'am <br>
+          <span>Manish Ghimire</span>
+          <br />
+          <strong class="TXT"></strong>
+        </h1>
+        <p>
+          I'm a web Designer with extensive experience for over 10 month.My expertise is to create and website design,graphic design, and many more...
+        </p>
+        <a href="#contact" class="btn contMe"> Contact Me
+          <!-- Icon here  -->
+          <ion-icon name="send-outline"></ion-icon>
+        </a>
+      </div>
+      <a href="#about" class="DownArrow">
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </a>
+      <a href="#" class="UpArrow">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+      </a>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <div class="title">
+        <h1>About Me</h1>
+        <p>
+          My Introduction
+        </p>
+      </div>
+      <div class="space">
+        <div class="img-box">
+          <img src="assets/Image/about-img.png" alt="">
+        </div>
+        <div class="des">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quo ea commodi autem eius id error. Corporis inventore adipisci hic sequi! Blanditiis architecto reprehenderit rerum assumenda, illum aliquam quae dolore nobis laudantium incidunt maiores harum officiis animi commodi! Ipsam exercitationem molestias, non et velit facilis cupiditate, ducimus, dolor harum explicabo cum necessitatibus obcaecati minima dignissimos.
+          </p>
+          <div class="more">
+            <p>
+              <span>02+</span>
+              <br>
+              years
+              <br>
+              experience
+            </p>
+            <!-- ============================ -->
+            <p>
+              <span>18+</span>
+              <br>
+              completed
+              <br>
+              projects
+            </p>
+            <!-- ============================ -->
+            <p>
+              <span>4+</span>
+              <br>
+              compared
+              <br>
+              rating
+            </p>
+          </div>
+          <a href="#" class="btn more">
+            Download CV
+            <ion-icon name="cloud-download-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <div class="title">
+        <h1>Skills</h1>
+        <p>
+          My technological level
+        </p>
+      </div>
+      <div class="container">
+        <div class="main-container">
+          <div class="title1">
+            <div class="icon">
+              <ion-icon name="extension-puzzle-outline"></ion-icon>
+            </div>
+            <div class="text">
+              <h4>	Frontend Developer </h4>
+              <p>
+                More than 2 years
+              </p>
+            </div>
+            <div onclick="show();" class="dropDownArrow">
+              <ion-icon class="upArrow" name="chevron-up-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="DropDownMenu">
+            <div class="item">
+              <div class="main">
+                <p>
+                  HTML
+                </p>
+                <p>
+                  90%
+                </p>
+              </div>
+              <div class="length">
+                <p style="--width:90%"></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="main">
+                <p>
+                  CSS
+                </p>
+                <p>
+                  80%
+                </p>
+              </div>
+              <div class="length">
+                <p style="--width:80%"></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="main">
+                <p>
+                  Javascript
+                </p>
+                <p>
+                  50%
+                </p>
+              </div>
+              <div class="length">
+                <p style="--width:50%"></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="main">
+                <p>
+                  Boostrap
+                </p>
+                <p>
+                  30%
+                </p>
+              </div>
+              <div class="length">
+                <p style="--width:30%"></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="main">
+                <p>
+                  React
+                </p>
+                <p>
+                  20%
+                </p>
+              </div>
+              <div class="length">
+                <p style="--width:20%"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="title1">
+            <div class="icon">
+              <ion-icon name="transgender-outline"></ion-icon>
+            </div>
+            <div class="text">
+              <h4>	Backend Developer </h4>
+              <p>
+                More than 2 years
+              </p>
+            </div>
+            <div onclick="show2();" class="dropDownArrow2">
+              <ion-icon class="upArrow2" name="chevron-up-outline"></ion-icon>
+            </div>
+          </div>
+          <!-- DropDownMenu -->
+          <div class="DropDownMenu2">
+            <div class="item">
+              <div class="main">
+                <p>
+                  PHP
+                </p>
+                <p>
+                  30%
+                </p>
+              </div>
+              <div class="length">
+                <p style="--width:30%"></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="main">
+                <p>
+                  Node Js
+                </p>
+                <p>
+                  20%
+                </p>
+              </div>
+              <div class="length">
+                <p style="--width:20%"></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="main">
+                <p>
+                  SQL
+                </p>
+                <p>
+                  40%
+                </p>
+              </div>
+              <div class="length">
+                <p style="--width:40%"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="title1">
+            <div class="icon">
+              <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+            <div class="text">
+              <h4>	Designer </h4>
+              <p>
+                More than 2 years
+              </p>
+            </div>
+            <div onclick="show3();" class="dropDownArrow3">
+              <ion-icon class="upArrow3" name="chevron-up-outline"></ion-icon>
+            </div>
+          </div>
+          <!-- DropDownMenu -->
+          <div class="DropDownMenu3">
+            <div class="item">
+              <div class="main">
+                <p>
+                  Figma
+                </p>
+                <p>
+                  50%
+                </p>
+              </div>
+              <div class="length">
+                <p style="--width:50%"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--==================== QUALIFICATION ====================-->
+    <section class="qualification section">
+      <div class="title">
+        <h1>Qualification</h1>
+        <p>
+          A Personal Info
+        </p>
+      </div>
+    </section>
+    <!--==================== SERVICES ====================-->
+    <section class="services section" id="services">
+      <div class="title">
+        <h1>My Services</h1>
+        <p>
+          Anytime & Anywhere
+        </p>
+      </div>
+      <div class="space">
+        <div class="service">
+          <ion-icon name="color-palette-outline"></ion-icon>
+          <h1>UI/Ux Designs</h1>
+          <a href="" class="btn">
+            See More
+            <ion-icon name="paper-plane-outline"></ion-icon>
+          </a>
+        </div>
+        <div class="service">
+          <ion-icon name="code-slash-outline"></ion-icon>
+          <h1>Web Development</h1>
+          <a href="" class="btn">
+            See More
+            <ion-icon name="paper-plane-outline"></ion-icon>
+          </a>
+        </div>
+        <div class="service">
+          <ion-icon name="megaphone-outline"></ion-icon>
+          <h1>Advertising</h1>
+          <a href="" class="btn">
+            See More
+            <ion-icon name="paper-plane-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section">
+      <div class="title">
+        <h1>About Me</h1>
+        <p>
+          My Introduction
+        </p>
+      </div>
+
+    </section>
+    <!--==================== PROJECT IN MIND ====================-->
+    <section class="project section">
+      <div class="title">
+        <h1>About Me</h1>
+        <p>
+          My Introduction
+        </p>
+      </div>
+    </section>
+    <!--==================== TESTIMONIAL ====================-->
+    <section class="testimonial section">
+      <div class="title">
+        <h1>About Me</h1>
+        <p>
+          My Introduction
+        </p>
+      </div>
+    </section>
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contact">
+      <div class="title">
+        <h1>Contact Me</h1>
+        <p>
+          Get In Touch
+        </p>
+      </div>
+      <div class="container">
+        <div class="info">
+          <!-- =================={==================}} -->
+          <div>
+            <div>
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>
+                Kathmandu City
+              </p>
+            </div>
+          </div>
+          <!-- =================={==================}} -->
+          <div>
+            <div>
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <div>
+              <h4>Call</h4>
+              <p>
+                +97 9800000000
+              </p>
+            </div>
+          </div>
+          <!-- =================={==================}} -->
+          <div>
+            <div>
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>
+                atomicdev09@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="title">
+            <h1>Feedback</h1>
+          </div>
+          <div>
+            <label class="label" for="name">Name</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div>
+            <label class="label" for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div>
+            <label class="label" for="msg">Message</label>
+            <textarea name="msg" id="msg"></textarea>
+          </div>
+          <input class="btn" type="button" value="Submit">
+        </form>
+      </div>
+    </section>
+  </main>
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="shapes"></div>
+    <div class="row">
+      <h1>AtomicDev</h1>
+      <div class="links">
+        <a href="">Official Website</a>
+        <a href="">gdhddii</a>
+        <a href="">bsjskssk</a>
+      </div>
+      <div class="social-media">
+        <a href="">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="">
+          <ion-icon name="logo-discord"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright 2022. AtomicDev
+      </p>
+    </div>
+  </footer>
+  <!-- ======================== MENUBAR =========================== -->
+  <div class="menubar">
+    <div class="gotoHome">
+      <a href="#"><ion-icon name="home"></ion-icon></a>
+    </div>
+    <div class="menu">
+      <!-- Icon Here -->
+      <ion-icon name="menu-outline"></ion-icon>
+      <ion-icon class="close" name="close-outline"></ion-icon>
+    </div>
+    <div class="options">
+      <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+    </div>
+  </div>
+  <div class="list">
+    <a href="#">policy</a>
+    <a href="#">Terms</a>
+    <a href="#">About</a>
+    <a id="color" onclick="showCurrentSkinColor();">Current Skin Color</a>
+  </div>
+  <a href="#" class="UpArrow">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+  <div class="refresh" onclick="Change();">
+    <ion-icon name="color-palette-outline"></ion-icon>
+  </div>
+  <!--==================== SCROLL TOP ====================-->
+  <!--==================== SWIPER JS ====================-->
+  <!--==================== MAIN JS ====================-->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
